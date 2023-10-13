@@ -1,4 +1,4 @@
-import pygame, spawnys
+import pygame, sys
 from math import hypot, floor
 from random import choice, random
 from pygame.locals import QUIT
@@ -191,7 +191,7 @@ while True:
   for event in pygame.event.get():
     if event.type == QUIT:
       pygame.quit()
-      spawnys.exit()
+      sys.exit()
     if event.type == pygame.KEYUP:
       if event.key == pygame.K_r:
         draw_best = not draw_best
